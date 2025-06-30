@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enquiry Form</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      padding: 30px;
+    }
+    .enquiry-form {
+      max-width: 400px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .enquiry-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .enquiry-form input,
+    .enquiry-form button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    .enquiry-form button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .enquiry-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form
+    class="enquiry-form"
+    action="https://formspree.io/f/mkgbyrnq"
+    method="POST"
+  >
+    <h2>Enquiry Form</h2>
+    <input type="text" name="Name" placeholder="Your Name" required />
+    <input type="tel" name="Phone" placeholder="Your Phone" required />
+    <input type="email" name="Email" placeholder="Your Email" required />
+    <button type="submit">
+      Submit <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </form>
+</body>
+</html>
